@@ -3,11 +3,11 @@ This library contains BASH aliases and functions for common or overly-verbose `g
 
 ### Index
 1. [Aliases](README.md#aliases)
-   1. [apply](README.md#apply)
-   1. [pull](README.md#pull)
-   1. [push](README.md#push)
-   1. [staged](README.md#staged)
-   1. [status](README.md#status)
+    1. [apply](README.md#apply)
+    1. [pull](README.md#pull)
+    1. [push](README.md#push)
+    1. [staged](README.md#staged)
+    1. [status](README.md#status)
 1. [Usage](README.md#usage)
 
 ## Aliases
