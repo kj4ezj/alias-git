@@ -8,7 +8,7 @@ This library contains BASH aliases and functions for common or overly-verbose `g
     1. [push](README.md#push)
     1. [staged](README.md#staged)
     1. [status](README.md#status)
-1. [Usage](README.md#usage)
+1. [Installation](README.md#installation)
 
 ## Aliases
 This library contains several aliases and functions.
@@ -54,7 +54,7 @@ The `staged` alias is equivalent to `git diff --staged`, and accepts any argumen
 ### status
 The `status` alias is equivalent to `git status`, and accepts any arguments or flags you might use with `git status`.
 
-## Usage
+## Installation
 Make a folder for these types of scripts and aliases to exist, if you don't have one already.
 ```bash
 mkdir -p ~/.bash
