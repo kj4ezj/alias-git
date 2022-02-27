@@ -55,13 +55,17 @@ The `staged` alias is equivalent to `git diff --staged`, and accepts any argumen
 The `status` alias is equivalent to `git status`, and accepts any arguments or flags you might use with `git status`.
 
 ## Usage
-Clone this repo locally...
+Make a folder for these types of scripts and aliases to exist, if you don't have one already.
 ```bash
 mkdir -p ~/.bash
-git clone --recursive git@github.com:kj4ezj/alias-git.git ~/.bash/alias-git
+cd ~/.bash
 ```
-...then source it in your `~/bashrc`, `~/bash_aliases`, `~/bash_profile`, or similar.
+Follow the instructions at the top-right of this repo to use your preferred method to clone this repo into that folder.
+```bash
+git clone --recursive git@github.com:kj4ezj/alias-git.git
+```
+Then, source `git.sh` in your `~/bashrc`, `~/bash_aliases`, `~/bash_profile`, or similar.
 ```bash
 source ~/.bash/alias-git/git.sh
 ```
-New shells will contain these aliases.
+Finally, restart your shell to use these aliases.
