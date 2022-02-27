@@ -16,7 +16,7 @@ function push()
         echo "$ push $GIT_BRANCH"
         return 1
     fi
-    git push "$([[ "$(echo $1 | grep -cP '^-*f(orce)?$')" != '0' ]] && echo '--force ')"origin "$(git branch --show-current)"
+    git push $([[ "$(echo $1 | grep -cP '^-*f(orce)?$')" != '0' ]] && echo '--force ')origin "$(git branch --show-current)"
 }
 
 alias staged='git diff --staged'
