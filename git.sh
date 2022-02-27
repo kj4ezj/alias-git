@@ -19,4 +19,5 @@ function push()
     git push "$([[ "$(echo $1 | grep -cP '^-*f(orce)?$')" != '0' ]] && echo '--force ')"origin "$(git branch --show-current)"
 }
 
+alias staged='git diff --staged'
 alias status='git status'

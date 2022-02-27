@@ -6,6 +6,7 @@ This library contains BASH aliases and functions for common or overly-verbose `g
    1. [apply](README.md#apply)
    1. [pull](README.md#pull)
    1. [push](README.md#push)
+   1. [staged](README.md#staged)
    1. [status](README.md#status)
 1. [Usage](README.md#usage)
 
@@ -46,6 +47,9 @@ push --force
 This will, of course, overwrite the remote branch with the contents of your local branch without regard for any differences in the commit history.
 
 Force-pushing to a base branch is intentionally not supported. If you wish to force-push to a base branch, you will have to type out the `git` command in full.
+
+### staged
+The `staged` alias is equivalent to `git diff --staged`, and accepts any arguments or flags you might use with `git diff`.
 
 ### status
 The `status` alias is equivalent to `git status`, and accepts any arguments or flags you might use with `git status`.
