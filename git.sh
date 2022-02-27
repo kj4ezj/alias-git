@@ -9,7 +9,7 @@ function pull()
 
 function push()
 {
-    git push origin "$(git branch --show-current)"
+    git push "$([[ "$(echo $1 | grep -cP '^-*f(orce)?$')" != '0' ]] && echo '--force ')"origin "$(git branch --show-current)"
 }
 
 alias status='git status'
