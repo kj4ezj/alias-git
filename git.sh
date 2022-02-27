@@ -7,4 +7,9 @@ function pull()
     git submodule update --init --recursive
 }
 
+function push()
+{
+    git push origin "$(git branch --show-current)"
+}
+
 alias status='git status'
