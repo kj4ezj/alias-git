@@ -3,7 +3,8 @@ alias apply='git cherry-pick'
 
 function pull()
 {
-    git pull origin "$(git branch --show-current)"
+    GIT_BRANCH="$(git branch --show-current)"
+    [[ -z "$GIT_BRANCH" ]] || git pull origin "$GIT_BRANCH"
     git submodule update --init --recursive
 }
 
